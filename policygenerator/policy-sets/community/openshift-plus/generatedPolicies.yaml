@@ -4,7 +4,7 @@ metadata:
   labels:
     open-cluster-management.io/policy-set: openshift-plus
   name: placement-openshift-plus-clusters
-  namespace: policies
+  namespace: acm-policies
 spec:
   predicates:
   - requiredClusterSelector:
@@ -25,7 +25,7 @@ metadata:
   labels:
     open-cluster-management.io/policy-set: openshift-plus
   name: placement-openshift-plus-hub
-  namespace: policies
+  namespace: acm-policies
 spec:
   predicates:
   - requiredClusterSelector:
@@ -42,7 +42,7 @@ metadata:
   labels:
     open-cluster-management.io/policy-set: openshift-plus
   name: binding-policy-openshift-plus-hub
-  namespace: policies
+  namespace: acm-policies
 placementRef:
   apiGroup: cluster.open-cluster-management.io
   kind: Placement
@@ -58,7 +58,7 @@ metadata:
   labels:
     open-cluster-management.io/policy-set: openshift-plus
   name: binding-policy-openshift-plus-hub2
-  namespace: policies
+  namespace: acm-policies
 placementRef:
   apiGroup: cluster.open-cluster-management.io
   kind: Placement
@@ -79,7 +79,7 @@ metadata:
   labels:
     open-cluster-management.io/policy-set: openshift-plus
   name: policy-acs-central-ca-bundle
-  namespace: policies
+  namespace: acm-policies
 spec:
   disabled: false
   policy-templates:
@@ -319,7 +319,7 @@ metadata:
   labels:
     open-cluster-management.io/policy-set: openshift-plus
   name: policy-acs-central-status
-  namespace: policies
+  namespace: acm-policies
 spec:
   disabled: false
   policy-templates:
@@ -376,7 +376,7 @@ metadata:
   labels:
     open-cluster-management.io/policy-set: openshift-plus
   name: policy-acs-operator-central
-  namespace: policies
+  namespace: acm-policies
 spec:
   disabled: false
   policy-templates:
@@ -464,7 +464,7 @@ metadata:
   labels:
     open-cluster-management.io/policy-set: openshift-plus
   name: policy-advanced-managed-cluster-security
-  namespace: policies
+  namespace: acm-policies
 spec:
   disabled: false
   policy-templates:
@@ -589,7 +589,7 @@ metadata:
   labels:
     open-cluster-management.io/policy-set: openshift-plus
   name: policy-advanced-managed-cluster-status
-  namespace: policies
+  namespace: acm-policies
 spec:
   disabled: false
   policy-templates:
@@ -629,7 +629,7 @@ metadata:
   labels:
     open-cluster-management.io/policy-set: openshift-plus
   name: openshift-plus-clusters
-  namespace: policies
+  namespace: acm-policies
 spec:
   description: The OpenShift Platform Plus policy set applies several policies that
     install the OpenShift Platform Plus products using best practices that allow them
@@ -645,7 +645,7 @@ metadata:
   labels:
     open-cluster-management.io/policy-set: openshift-plus
   name: openshift-plus-hub
-  namespace: policies
+  namespace: acm-policies
 spec:
   description: The OpenShift Platform Plus policy set applies several policies that
     will install the OpenShift Platform Plus products using best practices that allow
