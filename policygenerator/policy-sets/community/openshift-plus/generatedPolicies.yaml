@@ -305,7 +305,7 @@ spec:
               name: sensor-tls
               namespace: policies
             type: Opaque
-        remediationAction: enforce
+        remediationAction: inform
         severity: medium
 ---
 apiVersion: policy.open-cluster-management.io/v1
@@ -450,7 +450,7 @@ spec:
                     minReplicas: 2
                     replicas: 2
                 scannerComponent: Enabled
-        remediationAction: enforce
+        remediationAction: inform
         severity: medium
 ---
 apiVersion: policy.open-cluster-management.io/v1
@@ -575,7 +575,7 @@ spec:
                   collection: KernelModule
                   imageFlavor: Regular
                 taintToleration: TolerateTaints
-        remediationAction: enforce
+        remediationAction: inform
         severity: medium
 ---
 apiVersion: policy.open-cluster-management.io/v1
